@@ -1,3 +1,13 @@
+![AnkiRecolor banner](banner.png)
+
+<p align="center"><img src="logo.png" alt="AnkiRecolor logo" width="160"></p>
+
+![AnkiRecolor animated scene](assets-scene.svg)
+
+_Theme: ukiyo-e woodblock. One vermilion brush stroke repaints the whole interface._
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
 ReColor your Anki desktop to whatever aesthetic you like! Combine with the <a href="https://ankiweb.net/shared/info/1210908941">Custom Background and Gear Icon add-on</a> for an amazing look!
 
 # How to Use

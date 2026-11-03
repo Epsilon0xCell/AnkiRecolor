@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="26" viewBox="0 0 800 26">
+<rect width="800" height="26" fill="#f3e5cf"/>
+<rect x="0" y="11" width="800" height="4" fill="#c33d21"/>
+<circle cx="0" cy="13" r="7" fill="#2a3d66">
+<animate attributeName="cx" values="0;800" dur="4.5s" repeatCount="indefinite"/></circle>
+<circle cx="400" cy="13" r="4" fill="#c33d21"/>
+</svg>
