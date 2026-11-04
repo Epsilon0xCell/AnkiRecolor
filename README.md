@@ -1,6 +1,6 @@
 ![AnkiRecolor banner](banner.png)
 
-<p align="center"><img src="logo.png" alt="AnkiRecolor logo" width="160"></p>
+<p align="center"><img src="logo.png" alt="AnkiRecolor logo" width="220"></p>
 
 ![AnkiRecolor animated scene](assets-scene.svg)
 
@@ -8,24 +8,26 @@ _Theme: ukiyo-e woodblock. One vermilion brush stroke repaints the whole interfa
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
+# AnkiRecolor
+
 ReColor your Anki desktop to whatever aesthetic you like! Combine with the <a href="https://ankiweb.net/shared/info/1210908941">Custom Background and Gear Icon add-on</a> for an amazing look!
 
 # How to Use
-- Download from [AnkiWeb](https://ankiweb.net/shared/info/688199788)
+1. Download from [AnkiWeb](https://ankiweb.net/shared/info/688199788)
     - This add-on has been tested for Anki 2.1.41+ up to 2.1.50. It may work on older versions, but it has NOT been tested and we can't provide support for that at the moment.
-- After installing, there will be an AnKing menu at the top. Click the ReColor submenu to open the ReColor dialog
-- The colors listed are everything that Anki customizes (unfortunately some things are linked together so changing one will change the other and there's no way around that for us)
-- Once you click "Save", the colors will update. 
-- Click "Advanced" if you want to input html colors or see the underlying code
+2. After installing, there will be an AnKing menu at the top. Click the ReColor submenu to open the ReColor dialog
+3. The colors listed are everything that Anki customizes (unfortunately some things are linked together so changing one will change the other and there's no way around that for us)
+4. Once you click "Save", the colors will update. 
+5. Click "Advanced" if you want to input html colors or see the underlying code
 
 
 <b>Share your pictures with #ReColorAnKing and tag @AnKingMed on social media so we can re-share it!</b>
 
 ## Screenshots
 <b>See other examples users have uploaded or upload your own theme: <a href="https://github.com/AnKingMed/AnkiRecolor/wiki">link</a></b>
-<img width="600px" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/solaris_light.png?raw=true">
-<img width="600px" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/nord_dark.png?raw=true">
-<img width="600px" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/one_darkest.png?raw=true">
+| Solaris Light | Nord Dark | One Darkest |
+|---|---|---|
+| <img width="260" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/solaris_light.png?raw=true"> | <img width="260" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/nord_dark.png?raw=true"> | <img width="260" src="https://github.com/AnKingMed/AnkiRecolor/blob/main/screenshots/one_darkest.png?raw=true"> |
 
 # Development
 
