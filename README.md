@@ -1,16 +1,10 @@
-![AnkiRecolor banner](banner.png)
-
-<p align="center"><img src="logo.png" alt="AnkiRecolor logo" width="220"></p>
-
-![AnkiRecolor animated scene](assets-scene.svg)
-
-_Theme: ukiyo-e woodblock. One vermilion brush stroke repaints the whole interface._
-
-<p align="center"><img src="sep-heavy.svg" alt=""></p>
-
 # AnkiRecolor
 
 ReColor your Anki desktop to whatever aesthetic you like! Combine with the <a href="https://ankiweb.net/shared/info/1210908941">Custom Background and Gear Icon add-on</a> for an amazing look!
+
+![AnkiRecolor banner](banner.png)
+
+_Theme: ukiyo-e woodblock. One vermilion brush stroke repaints the whole interface._
 
 # How to Use
 1. Download from [AnkiWeb](https://ankiweb.net/shared/info/688199788)
@@ -67,3 +61,9 @@ This project doesn't use a strict python formatter. Even so, please make it look
 
 
 <div><center><a href="https://courses.theanking.com"><img src="https://raw.githubusercontent.com/AnKingMed/My-images/master/AnKing/MasteryCourse.png?raw=true"></a></center></div>
+
+## Visual Identity
+
+<p align="center"><img src="logo.png" alt="AnkiRecolor logo" width="220"></p>
+
+![AnkiRecolor animated scene](assets-scene.svg)
