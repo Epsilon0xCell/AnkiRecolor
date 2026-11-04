@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnkiRecolor: repaint Anki in one stroke</title>
+<meta name="description" content="AnKing ReColor is an Anki add-on that lets you recolor the entire Anki desktop interface, with a dialog listing every customizable color and an advanced mode for HTML color values.">
+<style>
+@font-face { font-family:'Kaisei Decol'; src:url('fonts/KaiseiDecol-Regular.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Kaisei Decol'; src:url('fonts/KaiseiDecol-Bold.ttf') format('truetype'); font-weight:700; font-display:swap; }
+@font-face { font-family:'Zen Kaku Gothic New'; src:url('fonts/ZenKakuGothicNew-Medium.ttf') format('truetype'); font-weight:500; font-display:swap; }
+@font-face { font-family:'Zen Kaku Gothic New'; src:url('fonts/ZenKakuGothicNew-Bold.ttf') format('truetype'); font-weight:700; font-display:swap; }
+@font-face { font-family:'Zen Kaku Gothic New'; src:url('fonts/ZenKakuGothicNew-Black.ttf') format('truetype'); font-weight:900; font-display:swap; }
+:root { --indigo:#2b3a67; --vermilion:#e03c31; --gold:#c9a227; --paper:#f7efdd; --paper2:#efe3c8; --ink:#2a2620; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:'Zen Kaku Gothic New', sans-serif; line-height:1.7; font-weight:500; }
+.frame { max-width:980px; margin:0 auto; padding:0 5vw; }
+header { padding-top:2.2rem; text-align:center; }
+header img.banner { width:100%; height:auto; border:4px solid var(--ink); }
+.seal { display:inline-block; background:var(--vermilion); color:#fff; font-family:'Kaisei Decol', serif; padding:.4rem 1rem; letter-spacing:.3em; margin-top:1.4rem; }
+h1 { font-family:'Kaisei Decol', serif; font-size:3rem; margin:.3em 0 .1em; color:var(--indigo); }
+.sub { color:var(--vermilion); font-weight:700; letter-spacing:.08em; }
+header img.logo { width:110px; height:110px; border:3px solid var(--gold); background:#fff; }
+main { padding-bottom:1rem; }
+h2 { font-family:'Kaisei Decol', serif; font-size:1.9rem; color:var(--indigo); margin:1.8em 0 .4em; border-bottom:2px solid var(--gold); padding-bottom:.2em; }
+.stroke { height:14px; background:linear-gradient(90deg, var(--indigo) 0 30%, var(--vermilion) 30% 62%, var(--gold) 62% 100%); margin:2rem 0 0; }
+.panel { background:#fffdf4; border:1px solid var(--paper2); border-left:8px solid var(--vermilion); padding:1.2rem 1.5rem; }
+ol.steps { counter-reset:step; list-style:none; padding:0; }
+ol.steps li { counter-increment:step; margin:.8rem 0; padding-left:3rem; position:relative; }
+ol.steps li::before { content:counter(step); position:absolute; left:0; top:0; width:2rem; height:2rem; background:var(--indigo); color:#fff; font-family:'Kaisei Decol', serif; text-align:center; line-height:2rem; border-radius:50%; }
+.themes { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
+.theme { padding:1rem 1.2rem; border:1px solid var(--ink); }
+.theme strong { font-family:'Kaisei Decol', serif; font-size:1.15rem; }
+code { font-family:ui-monospace, Menlo, monospace; font-size:.9em; background:var(--paper2); padding:.05rem .35rem; }
+a { color:var(--vermilion); font-weight:700; }
+.btn { display:inline-block; background:var(--indigo); color:#fff; padding:.55rem 1.4rem; text-decoration:none; margin:.3rem .3rem .3rem 0; }
+.btn:hover { background:var(--vermilion); }
+footer { background:var(--indigo); color:var(--paper); margin-top:2.6rem; padding:2rem 5vw 2.6rem; }
+footer div { max-width:980px; margin:0 auto; }
+</style>
+</head>
+<body>
+<div class="frame">
+<header>
+  <img class="banner" src="assets/banner.png" alt="Ukiyo-e woodblock scene: a great brush sweeping across a row of standing flashcards, each card changing color as the brush passes">
+  <span class="seal">AnKing ReColor</span>
+  <h1>AnkiRecolor</h1>
+  <p class="sub">Repaint Anki in one stroke</p>
+  <p><img class="logo" src="assets/logo.png" alt="AnkiRecolor logo: a brush sweeping a band of vermilion across the top of a flashcard"></p>
+  <p>ReColor your Anki desktop to whatever aesthetic you like. The README suggests pairing it with the Custom Background and Gear Icon add-on for the full look.</p>
+  <p><a class="btn" href="https://ankiweb.net/shared/info/688199788">Get it on AnkiWeb</a> <a class="btn" href="https://github.com/Epsilon0xCell/AnkiRecolor">The repo</a></p>
+</header>
+<main>
+  <div class="stroke" aria-hidden="true"></div>
+  <section>
+    <h2>How to use it</h2>
+    <div class="panel">
+      <ol class="steps" style="margin:0;">
+        <li>Download the add-on from AnkiWeb. It has been tested for Anki 2.1.41 and up to 2.1.50. It may work on older versions, but those are untested and unsupported for now.</li>
+        <li>After installing, an AnKing menu appears at the top. Click the ReColor submenu to open the ReColor dialog.</li>
+        <li>The colors listed are everything Anki customizes. One honest limit, stated in the README: some things are linked together, so changing one changes the other, and there is no way around that from the add-on side.</li>
+        <li>Click Save, and the colors update.</li>
+        <li>Click Advanced if you want to input HTML colors or see the underlying code.</li>
+      </ol>
+    </div>
+    <p>I keep this fork in the fleet for a simple reason: study software is on screen for hours every day, and the person doing the studying should get to pick the colors. Share your result with the tag the README gives, #ReColorAnKing, and tag @AnKingMed so the upstream team can re-share it.</p>
+  </section>
+  <section>
+    <h2>Three looks from the README</h2>
+    <div class="themes">
+      <div class="theme" style="background:#fdf6e3;"><strong>Solaris Light</strong><p>A light theme shown in the README screenshot table.</p></div>
+      <div class="theme" style="background:#2e3440; color:#eceff4;"><strong>Nord Dark</strong><p>A dark northern palette, shown next to Solaris in the same table.</p></div>
+      <div class="theme" style="background:#101216; color:#d6deeb;"><strong>One Darkest</strong><p>The darkest of the three examples the README leads with.</p></div>
+    </div>
+    <p>More examples live in the project wiki, where users upload their own themes.</p>
+  </section>
+  <section>
+    <h2>Under the brush</h2>
+    <div class="panel" style="border-left-color:var(--indigo);">
+      <p style="margin-top:0;">Development notes from the README: the icons resource file is rebuilt from <code>src/addon/AnKing/icons.qrc</code> with <code>pyrcc5</code>, then edited to add a <code>-&gt; None</code> type hint. The project uses mypy for Python type checking and standardjs for JavaScript formatting:</p>
+      <p style="margin-bottom:0;"><code>python -m mypy .</code> &nbsp; <code>npx standard --fix</code></p>
+    </div>
+    <p>This repo carries no LICENSE file, so this page names no license for it. The add-on itself is the work of the AnKing team; upstream files stay as they are, and this site folder is the only addition in this fork.</p>
+  </section>
+  <div class="stroke" aria-hidden="true"></div>
+</main>
+</div>
+<footer>
+  <div>
+    <p>AnkiRecolor, fork kept by Gavin Blacklock. Written from the repo README and source tree, with credit to the AnKing team as the add-on authors.</p>
+  </div>
+</footer>
+</body>
+</html>
